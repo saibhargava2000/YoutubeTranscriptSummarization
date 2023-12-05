@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Transcript Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Transcript Summarizer</h1>
+        <form method="post">
+            <label for="video_url">Enter YouTube Video URL:</label>
+            <input type="text" name="video_url" required>
+            <input type="submit" value="Submit">
+        </form>
+        {% if video_url %}
+            <h2>Video URL:</h2>
+            <p>{{ video_url }}</p>
+        {% endif %}
+        {% if transcripts %}
+            <h2>Transcripts:</h2>
+            <p>{{ transcripts }}</p>
+        {% endif %}
+        {% if summary %}
+            <h2>Summary:</h2>
+            <p>{{ summary }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
