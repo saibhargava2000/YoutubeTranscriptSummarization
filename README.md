@@ -20,21 +20,21 @@ The applications of our YouTube Transcript Summarization project span multiple d
 
 
 Model Experiment 
-Data Collection 
+Data Collection: 
 Data Sources 
 The project uses a dataset from Kaggle, specifically the "Newspaper Text Summarization - CNN/DailyMail" dataset. This dataset includes articles from CNN and DailyMail, each containing a unique identifier (id), full article text (article), and associated highlights or summaries (highlights).
 
-Preprocessing 
+Preprocessing:  
 Data preprocessing involves extracting relevant information, such as article text and highlights, ensuring alignment with the specific requirements of the YouTube Transcript Summarization model.
 
-Model Training 
+Model Training: 
 Dataset Details 
 The training dataset is a combination of the Kaggle dataset and YouTube transcripts, offering a diverse range of content sources. Including news article highlights enhances the model's ability to generalize and produce coherent video summaries.
 
-Hyperparameters 
+Hyperparameters: 
 Fine-tuning the BART model involves adjusting hyperparameters to accommodate the characteristics of both YouTube transcripts and news articles. Parameters such as learning rates, batch sizes, and training epochs are optimized for performance.
 
-Training Challenges 
+Training Challenges: 
 The amalgamation of datasets introduces challenges related to domain adaptation and disparities in language usage. Strategies are implemented to address these challenges, promoting a more robust and adaptable model.
 
 
